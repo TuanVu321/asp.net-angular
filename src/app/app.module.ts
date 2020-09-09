@@ -7,7 +7,7 @@ import {AppComponent} from './app.component';
 import {HttpClientModule} from '@angular/common/http';
 import {JwtModule} from '@auth0/angular-jwt';
 import {NavComponent} from './nav/nav.component';
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {HomeComponent} from './home/home.component';
 import {RegisterComponent} from './register/register.component';
 import {ErrorInterceptorProvider} from './intercepter/error.intercepter';
@@ -44,6 +44,7 @@ import {PreventUnsaveChangesGuard} from './guards/prevent-unsave-changes.guard';
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
+    ReactiveFormsModule,
     NgxGalleryModule,
     BsDropdownModule.forRoot(),
     TabsModule.forRoot(),
