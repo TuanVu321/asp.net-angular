@@ -23,6 +23,7 @@ import {MemberDetailResolver} from './resolver/member-detail-resolver';
 import {NgxGalleryModule} from '@kolkov/ngx-gallery';
 import { MemberEditComponent } from './member/member-edit/member-edit.component';
 import {MemberEditResolver} from './resolver/member-edit-resolver';
+import {PreventUnsaveChangesGuard} from './guards/prevent-unsave-changes.guard';
 
 
 @NgModule({
@@ -61,6 +62,7 @@ import {MemberEditResolver} from './resolver/member-edit-resolver';
     ErrorInterceptorProvider,
     MemberDetailResolver,
     MemberEditResolver,
+    PreventUnsaveChangesGuard
   ],
   bootstrap: [AppComponent]
 })
